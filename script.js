@@ -54,3 +54,14 @@ urlSubmitButton.addEventListener("click", () => {
   }
 });
 
+// Activity 3
+// Change the colour of the text
+
+const textColourHeading = document.getElementById("textColourHeading");
+const newColour = document.getElementById("colour");
+const colourButton = document.getElementById("colourButton");
+
+colourButton.addEventListener("click", () => {
+  textColourHeading.style.color = newColour.value;
+  textColourHeading.textContent = `The colour of this text is ${newColour.value}`;
+});
