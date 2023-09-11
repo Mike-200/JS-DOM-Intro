@@ -54,25 +54,3 @@ urlSubmitButton.addEventListener("click", () => {
   }
 });
 
-// Activity 3
-// Change the colour of the text
-
-const textColourHeading = document.getElementById("textColourHeading");
-const newColour = document.getElementById("colour");
-const colourButton = document.getElementById("colourButton");
-
-colourButton.addEventListener("click", () => {
-  textColourHeading.style.color = newColour.value;
-  textColourHeading.textContent = `The colour of this text is ${newColour.value}`;
-});
-
-// Activity 4
-// Log the co-rdinate of where the mouse clinks
-
-const coOrdinates = document.getElementById("coOrdinates");
-
-document.addEventListener("click", (event) => {
-  // console.log(event);
-  // console.log(event.clientX);
-  coOrdinates.textContent = `X co-ordinate: ${event.clientX}, Y co-ordinate: ${event.clientY}`;
-});
