@@ -65,3 +65,14 @@ colourButton.addEventListener("click", () => {
   textColourHeading.style.color = newColour.value;
   textColourHeading.textContent = `The colour of this text is ${newColour.value}`;
 });
+
+// Activity 4
+// Log the co-rdinate of where the mouse clinks
+
+const coOrdinates = document.getElementById("coOrdinates");
+
+document.addEventListener("click", (event) => {
+  // console.log(event);
+  // console.log(event.clientX);
+  coOrdinates.textContent = `X co-ordinate: ${event.clientX}, Y co-ordinate: ${event.clientY}`;
+});
